@@ -1,6 +1,2 @@
 # Zeus
-install docker
-
-如脚本执行过程中提示conntainer-selinux版本过低
-脚本中有注释，按照注释下载安装高版本conntainer-selinux
-如提示下载的conntainer-selinux无法打开，请根据下载地址到网站找寻合适的版本进行下载
+个人基地
