@@ -3,6 +3,10 @@
 #author:fzw
 #date:2019-01-23
 #install docker
+
+#镜像加速器
+#Mirror_accelerator=
+
 echo  "此脚本会执行yum update 命令，该命令会更新诸多软件版本，确定是否执行"
 read -t 5 -p "Is this ok [y/d/N]:" chose
 [ $chose != y ] && exit
@@ -32,8 +36,8 @@ yum install docker-ce -y
 #配置镜像加速器
 rm -rf /etc/docker
 mkdir /etc/docker
-cat << EOF >> /etc/docker/daemon.json
-{
-  "registry-mirrors": ["$Mirror_accelerator"]
-}
-EOF
+#cat << EOF >> /etc/docker/daemon.json
+#{
+#  "registry-mirrors": ["$Mirror_accelerator"]
+#}
+#EOF
